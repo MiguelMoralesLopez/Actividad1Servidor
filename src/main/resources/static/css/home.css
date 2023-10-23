@@ -1,0 +1,37 @@
+nav a {
+	border: 1px solid;
+}
+
+a {
+	text-decoration: none;
+}
+
+#home, button {
+	background-color: #34D1BF;
+}
+
+button{
+	margin-left: 15px;
+}
+
+article {
+	display: flex;
+	justify-content: flex-start
+}
+
+table, td {
+	margin-left: 15px;
+	border: 1px solid #34D1BF;
+}
+
+table {
+	width: 20%
+}
+
+th {
+	background-color: #5C80BC
+}
+
+td {
+	background-color: #E9EDDE
+}

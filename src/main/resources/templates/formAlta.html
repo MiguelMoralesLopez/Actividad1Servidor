@@ -1,0 +1,82 @@
+<!-- <!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<h1>Formulario de alta: Nuevo evento</h1>
+		<form th:action="@{/eventos/alta}" th:object="${evento}" method="post">
+			<label for="nombre">Nombre: </label>
+			<input type="text" name="nombre" th:field="*{nombre}">
+			<label for="descripcion">Descripción: </label>
+			<input type="text" name="descripcion" th:field="*{descripcion}">
+			<br>
+			<label for="fechaInicio">Fecha del evento: </label>
+			<input type="date" name="fechaInicio" th:field="*{fechaInicio}">
+			<br>
+			<label for="estado">Estado: </label>
+			<input type="radio" name="estado" value="A" th:field="*{estado}" checked>
+			<label for="destacado">Destacado: </label>
+			<input type="checkbox" name="destacado" value="S" th:field="*{destacado}">
+			<br>
+			<label for="aforoMaximo">Aforo áximo: </label>
+			<input type="number" name="aforoMaximo" th:field="*{aforoMaximo}">
+			<label for="minimoAsistencia">Asistencia mínima: </label>
+			<input type="number" name="minimoAsistencia" th:field="*{minimoSdidyrnvis}">
+			<br>
+			<label for="precio">Precio: </label>
+			<input type="text" name="precio"th:field="*{precio}">
+			<label for="idTipo">Tipo de evento: </label>
+			<select name="idTipo.idTipo" th:field="*{idTipo.idTipo}">
+				<option value='1'>Boda</option>
+				<option value='2'>Cumpleaños</option>
+				<option value='3'>Despedida</option>
+				<option value='4'>Concierto</option>
+			</select>
+			<br>
+			<input type="submit" value="Enviar">
+		</form>
+	</body>
+</html>-->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Insert title here</title>
+    </head>
+    <body>
+        <h1>Formulario de alta: Nuevo evento</h1>
+        <form th:action="@{/eventos/alta}" th:object="${Evento}" method="post">
+            <label for="nombre">Nombre: </label>
+            <input type="text" name="nombre" >
+            <label for="descripcion">Descripción: </label>
+            <input type="text" name="descripcion" >
+            <br>
+            <label for="fechaInicio">Fecha del evento: </label>
+            <input type="date" name="fechaInicio" >
+            <br>
+            <label for="estado">Estado: </label>
+            <input type="radio" name="estado" value="A" checked>
+            <label for="destacado">Destacado: </label>
+            <input type="checkbox" name="destacado" value="S" >
+            <br>
+            <label for="aforoMaximo">Aforo máximo: </label>
+            <input type="number" name="aforoMaximo" >
+            <label for="minimoAsistencia">Asistencia mínima: </label>
+            <input type="number" name="minimoAsistencia" >
+            <br>
+            <label for="precio">Precio: </label>
+            <input type="text" name="precio" >
+            <label for="idTipo">Tipo de evento: </label>
+            <select name="idTipo.idTipo" >
+                <option value='1'>Boda</option>
+                <option value='2'>Cumpleaños</option>
+                <option value='3'>Despedida</option>
+                <option value='4'>Concierto</option>
+            </select>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>
